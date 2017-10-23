@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/plugin.xsd">
 
     <label lang="de">Conexco Bootstrap Boilerplate Theme</label>
     <label lang="en">Conexco Bootstrap Boilerplate Theme</label>
@@ -8,9 +8,9 @@
 
     </description>
 
-    <compatibility minVersion="5.3.0"/>
+    <compatibility minVersion="5.3.3"/>
     <author>conexco - the e-commerce experts</author>
     <copyright>Copyright (c) 2017, conexco UG (haftungsbeschränkt) &amp; Co. KG</copyright>
-    <license>commercial</license>
-    <link>http://support.conexco.com</link>
+    <license>GNU GPLv3</license>
+    <link>http://www.bootstrap.de</link>
 </plugin>

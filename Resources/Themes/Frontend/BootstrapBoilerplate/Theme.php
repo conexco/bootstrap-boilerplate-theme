@@ -1,5 +1,23 @@
 <?php
 
+/**
+*   Conexco Bootstrap Boilerplate Theme
+*   Copyright (C) 2017, conexco UG (haftungsbeschränkt) & Co. KG
+*
+*   This program is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
 namespace Shopware\Themes\BootstrapBoilerplate;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -13,7 +31,7 @@ class Theme extends \Shopware\Components\Theme
      *
      * @var string
      */
-    protected $extend = 'BootstrapResponsive';
+    protected $extend = 'BootstrapExtension';
 
     /**
      * Defines the human readable theme name which is displayed in the backend.
@@ -34,14 +52,14 @@ class Theme extends \Shopware\Components\Theme
      *
      * @var string
      */
-    protected $author = 'conexco';
+    protected $author = 'conexco - the e-commerce experts';
 
     /**
      * License of the theme source code.
      *
      * @var string
      */
-    protected $license = 'commercial';
+    protected $license = 'GNU GPLv3';
 
     /**
      * Javascript files which will be used in the theme.
