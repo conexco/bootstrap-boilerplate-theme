@@ -1,6 +1,8 @@
 // custom buttons with gradient
-button.btn:not(.btn-link) {
-    #gradient > .vertical(#fff, @swf-gray-light);
+.btn {
+    &.btn-default {
+        #gradient > .vertical(#fff, @swf-gray-light);
+    }
 
     &.btn-primary {
     	#gradient > .vertical(lighten(@swf-brand-primary, 5%), @swf-brand-primary);
