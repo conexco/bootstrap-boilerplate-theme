@@ -79,6 +79,55 @@ class Theme extends \Shopware\Components\Theme
 
     );
 
+    public function createConfig(Form\Container\TabContainer $container)
+    {
+        $container->addTab($this->createCustomerTab());
+    }
+
+    private function createCustomerTab()
+    {
+        $tab = $this->createTab(
+            'customer-config',
+            'Kunden Konfiguration',
+            array(
+                'attributes' => array(
+                    'layout' => 'anchor',
+                    'autoScroll' => true,
+                ),
+            )
+        );
+
+        $tab->addElement($this->createHeadingsFieldset());
+
+        return $tab;
+    }
+
+    private function createHeadingsFieldset()
+    {   
+        $fieldset = $this->createFieldSet(
+            'headings',
+            'Überschriften',
+            array(
+                'attributes' => array(
+                    'defaults' => array(
+                        'labelWidth' => 200,
+                        'margin' => '5 15 5 0',
+                    )
+                )
+            )
+        );
+
+        $fieldset->addElement(
+            $this->createNumberField(
+                'swf-headings-font-weight',
+                'Schriftschnitt Überschrift',
+                '600'
+            )
+        );
+
+        return $fieldset;
+    }
+
     /**
      * Helper function to add default theme
      *
@@ -103,6 +152,7 @@ class Theme extends \Shopware\Components\Theme
             'swf-footer-color' => '@swf-text-color',
             'swf-border-radius-base' => '3px',
             'sidebarFilter' => 'false',
+            'swf-headings-font-weight' => '600',
         );
 
         $set = new ConfigSet();
