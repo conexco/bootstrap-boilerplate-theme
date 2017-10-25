@@ -138,11 +138,11 @@ class Theme extends \Shopware\Components\Theme
     {
         $themeDefaults = array(
             'swf-brand-primary' => '#D9400B',
-            'swf-gray' => '#F5F5F8',
-            'swf-gray-light' => 'lighten(@swf-gray, 1%)',
-            'swf-gray-dark' => 'darken(@swf-gray, 10%)',
+            'swf-gray' => '#5F7285',
+            'swf-gray-light' => '#F5F5F8',
+            'swf-gray-dark' => 'darken(@swf-gray, 15%)',
             'swf-body-bg' => '#FFFFFF',
-            'swf-text-color' => '#5F7285',
+            'swf-text-color' => '@swf-gray',
             'swf-panel-default-heading-bg' => 'transparent',
             'swf-price-default-color' => '@swf-gray-dark',
             'swf-heading-text-color' => '@swf-text-color',
