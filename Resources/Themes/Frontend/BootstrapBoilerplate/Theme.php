@@ -152,6 +152,8 @@ class Theme extends \Shopware\Components\Theme
             'swf-footer-border' => '@swf-gray-light',
             'swf-footer-color' => '@swf-text-color',
             'swf-border-radius-base' => '3px',
+            'swf-border-radius-large' => '3px',
+            'swf-border-radius-small' => '3px',
             'sidebarFilter' => 'false',
             'swf-headings-font-weight' => '600',
         );
