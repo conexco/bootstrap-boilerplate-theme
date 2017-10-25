@@ -1,8 +1,5 @@
 {extends file='parent:frontend/checkout/cart.tpl'}
 
-{* empty top actions *}
-{block name='frontend_checkout_cart_table_actions_wrapper'}{/block}
-
 {* two column cart layout *}
 {block name='frontend_checkout_cart_panel'}
 	<div class="row mvl">
@@ -25,3 +22,6 @@
 		</div>
 	</div>
 {/block}
+
+{block name='frontend_checkout_cart_table_actions_wrapper'}{/block}
+{block name='frontend_checkout_cart_table_actions_bottom_wrapper'}{/block}

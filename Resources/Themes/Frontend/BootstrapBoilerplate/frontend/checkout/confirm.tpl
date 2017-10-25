@@ -28,3 +28,5 @@
         </div>
     </div>
 {/block}
+
+{block name='frontend_checkout_confirm_confirm_table_actions'}{/block}
