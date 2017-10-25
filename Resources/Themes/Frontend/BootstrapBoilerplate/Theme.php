@@ -67,7 +67,8 @@ class Theme extends \Shopware\Components\Theme
      * @var array
      */
     protected $javascript = array(
-
+        'vendors/js/philter.js',
+        'src/js/custom.js'
     );
 
     /**
