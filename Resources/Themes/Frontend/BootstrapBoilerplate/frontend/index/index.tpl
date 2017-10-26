@@ -6,5 +6,7 @@
 {block name='frontend_index_header_container'}
 	{$smarty.block.parent}
 
-	{include file='frontend/index/main-navigation.tpl'}
+	<div class="wsmenu-border-wrapper">
+		{include file='frontend/index/main-navigation.tpl'}
+	</div>
 {/block}                                     
