@@ -38,7 +38,7 @@ class Theme extends \Shopware\Components\Theme
      *
      * @var string
      */
-    protected $name = 'BootstrapBoilerplate';
+    protected $name = 'Bootstrap Boilerplate';
 
     /**
      * Allows to define a description text for the theme.

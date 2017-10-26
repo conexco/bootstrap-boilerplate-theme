@@ -95,18 +95,35 @@
                                 {/block}
                             {/if}
                         {/block}
+
+                        {block name="frontend_checkout_cart_summary_add_voucher"}
+                            {if $sTargetAction != 'shippingPayment'}
+                                <form class="mtl" method="post" action="{url action='addVoucher' sTargetAction=$sTargetAction}">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="basket_add_voucher" name="sVoucher" placeholder="{s name='CheckoutFooterAddVoucherLabelInline' namespace='frontend/checkout/cart_footer_left'}{/s}">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </form>
+                            {/if}
+                        {/block}
                     </div>
 
                     {block name="frontend_checkout_cart_summary_panel"}
-                        <div class="panel-footer">
-                            {block name="frontend_checkout_summary_button"}
-                                <a href="{if {config name=always_select_payment}}{url controller='checkout' action='shippingPayment'}{else}{url controller='checkout' action='confirm'}{/if}" 
-                                   title="{"{s name='CheckoutActionsLinkProceed' namespace='frontend/checkout/actions'}{/s}"|escape}" 
-                                   class="btn btn-primary btn-block checkout-action-btn" {if $sMinimumSurcharge && $sDispatchNoOrder}disabled="disabled"{/if}>
-                                    {s name="CheckoutActionsLinkProceed" namespace="frontend/checkout/actions"}{/s}
-                                </a>
-                            {/block}
-                        </div>
+                        {if $sTargetAction != 'shippingPayment'}
+                            <div class="panel-footer">
+                                {block name="frontend_checkout_summary_button"}
+                                    <a href="{if {config name=always_select_payment}}{url controller='checkout' action='shippingPayment'}{else}{url controller='checkout' action='confirm'}{/if}" 
+                                       title="{"{s name='CheckoutActionsLinkProceed' namespace='frontend/checkout/actions'}{/s}"|escape}" 
+                                       class="btn btn-primary btn-block checkout-action-btn" {if $sMinimumSurcharge && $sDispatchNoOrder}disabled="disabled"{/if}>
+                                        {s name="CheckoutActionsLinkProceed" namespace="frontend/checkout/actions"}{/s}
+                                    </a>
+                                {/block}
+                            </div>
+                        {/if}
                     {/block}
                 </div>
             {/block}

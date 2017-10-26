@@ -15,5 +15,4 @@
     {/if}
 {/block}
 
-
-
+{block name="frontend_checkout_cart_summary_add_voucher"}{/block}
