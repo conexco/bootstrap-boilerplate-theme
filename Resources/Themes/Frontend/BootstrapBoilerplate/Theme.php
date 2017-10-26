@@ -155,6 +155,7 @@ class Theme extends \Shopware\Components\Theme
             'swf-border-radius-large' => '3px',
             'swf-border-radius-small' => '3px',
             'sidebarFilter' => 'false',
+            'swf-thumbnail-padding' => '10px',
             'swf-headings-font-weight' => '600',
         );
 
