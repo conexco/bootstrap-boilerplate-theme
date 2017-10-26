@@ -6,16 +6,6 @@
 ### Requirements
 - Shopware 5.3 or newer
 
-
-### Overview
-
-The repository contains different branches
-
-- **1.0** contains the stable code. If you want to use the theme in production, you should use this branch.
-- **dev** the dev branch contains new features and bugfixes
-
-Every release is tagged with its version like `v1.0.0`. If you need an older version for you shop, just checkout the tag you need.
-
 ### Installation via Shopware Store
 Open the plugin manager in your shop and search for `Conexco Bootstrap Boilerplate Theme`.
 Then install and activate it.
@@ -34,4 +24,4 @@ php bin/console sw:plugin:install CxoBootstrapBoilerplate
 php bin/console sw:plugin:activate CxoBootstrapBoilerplate
 ```
 
-3.) to use the bootstrap theme you have to activate it in the plugin manager in the shopware backend
+3.) to use the bootstrap boilerplate theme you have to activate it in the plugin manager in the shopware backend
