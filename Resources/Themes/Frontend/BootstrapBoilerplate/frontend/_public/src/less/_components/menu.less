@@ -1,0 +1,48 @@
+// shopware style navbar
+header {
+	.js-clingify-placeholder .js-clingify-wrapper {
+		border-bottom: 1px solid @swf-brand-primary;
+
+		.wsmenu {
+			border: none;
+			.unitize(max-width, @swf-container-lg - @swf-grid-gutter-width);
+
+			.wsmenu-list > li {
+				&, i {
+					.unitize(font-size, 16);
+				}
+				
+				&:first-child, &:last-child {
+					a {
+						border-radius: 0;
+					}
+				}
+
+				a.active {
+					#gradient > .vertical(lighten(@swf-brand-primary, 5%), @swf-brand-primary);
+				}
+			}
+		}
+
+		&.js-clingify-locked {
+			background: #ffffff;
+		}
+	}
+}
+
+@media screen and (min-width: @swf-screen-hd-min) {
+
+    header {
+		.js-clingify-placeholder .js-clingify-wrapper {
+			.wsmenu .wsmenu-list > li {
+				&, &:first-child, &:last-child {
+					a {
+						border-top-left-radius: @swf-border-radius-base;
+						border-top-right-radius: @swf-border-radius-base;
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -157,6 +157,13 @@ class Theme extends \Shopware\Components\Theme
             'sidebarFilter' => 'false',
             'swf-thumbnail-padding' => '10px',
             'swf-headings-font-weight' => '600',
+            'swf-navbar-default-bg' => 'transparent',
+            'swf-navbar-default-link-active-bg' => '@swf-brand-primary',
+            'swf-navbar-default-link-active-color' => '#FFFFFF',
+            'swf-navbar-default-link-color' => '@swf-gray',
+            'swf-navbar-default-link-hover-bg' => '@swf-gray-dark',
+            'swf-navbar-default-link-hover-color' => '#FFFFFF',
+            'swf-navbar-height' => '38px',
         );
 
         $set = new ConfigSet();
